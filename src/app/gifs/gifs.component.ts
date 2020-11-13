@@ -12,11 +12,11 @@ export class GifsComponent implements OnInit {
   constructor(private dataservice: DataService) { }
 
   ngOnInit(): void {
-  //   this.dataservice.getTrendingGifs();
-  //   .subscribe((response: any) => {
-  //     console.log('Data', response);
-  //     this.gifs = response.data;
-  //   });
-  // }
+    this.dataservice.getTrendingGifs();
+    // .subscribe((response: any) => {
+    //   console.log('Data', response);
+    //   this.gifs = response.data;
+    // });
+  }
 
 }

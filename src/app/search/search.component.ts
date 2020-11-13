@@ -13,11 +13,9 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // search(searchTerm: string) {
-  //   if (searchTerm | == '') {
+  search(searchTerm: string) {
+  //   if (searchTerm |== '') {
   //     this.dataservice.searchGifs(searchTerm);
-  //     .subscribe((responce: any) =>{
-  //     console.log('search Data, responce');
-  //   });
   // }
+}
 }

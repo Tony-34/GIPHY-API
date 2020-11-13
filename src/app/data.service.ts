@@ -1,22 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment} from '../environments/environment';
-import { Behaviorsubject } from 'rxjs';
+// import { environment} from '../environments/environment';
+import { BehaviorSubject } from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  gifs = new Behaviorsubject<any>([]);
+  // gifs = new BehaviorSubject<any>([]);
 
   constructor(private http:HttpClient) { }
 
-  getTrendingGifs() {
-    return this.http.get ();
-  }
+//   getTrendingGifs() {
+//     return this.http.get ('https://api.giphy.com/v1/gifs/trending?api_key=BWYFtWtDXVsZyZmh3LfRbKALka8HdfwF&limit=50&rating=g');
+//   }
 
-  searchGifs() {
-    return this.http.get();
-  }
-}
+//   searchGifs() {
+//     return this.http.get('https://api.giphy.com/v1/gifs/search?api_key=BWYFtWtDXVsZyZmh3LfRbKALka8HdfwF&limit=25&rating=g');
+//   }
+// }
